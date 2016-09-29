@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">  
+  <view class="userinfo">
+    <!-- 引用头部 include是引用全部文件 -->
+    <include src="../template/import" />  
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="red">{{userInfo.nickName}} {{motto}}</text>
+    <text class="m10">{{toasMsg}}</text>
+  
+  <input typepe="number" bindinput="bindKeyInput" class="input" maxlength="11" placeholder="请输入11位手机号码" />
+  
+  <button type="default" size="default" bindtap="qsscheck" hover-class="other-button-hover">立即查询</button>
+  <text class="m10">练手版本 v0.1 QQ3876307</text>
+  </view>
+</view>

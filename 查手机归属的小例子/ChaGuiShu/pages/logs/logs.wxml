@@ -1,0 +1,9 @@
+<!--logs.wxml-->
+<view class="container log-list">
+<image  style="width: 200px; height: 200px; background-color: #eeeeee;" src="../../images/2.jpg"></image>
+<text>微信公众号：qss918</text>
+<text>关注我 了解更多</text>
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>
